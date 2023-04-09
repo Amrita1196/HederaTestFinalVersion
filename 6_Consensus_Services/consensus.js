@@ -11,7 +11,7 @@ const {
 } = require("@hashgraph/sdk");
 
 //Loading values from environment file
-require('dotenv').config();
+require('dotenv').config({path:'../.env'});
 
 //using Account1 ID and Privatekey for consensus
 const myAccountId = process.env.ACCOUNT_ID1;
@@ -50,7 +50,7 @@ async function main() {
     // /Send one message
     let sendResponse = await new TopicMessageSubmitTransaction({
         topicId: topicId,
-        message: `Amrita Here,  writing the msg,`,
+        message: `Amrita Here,writing msg when,giving Hedera Test,`,
     }).execute(client);
 
     //Get the receipt of the transaction

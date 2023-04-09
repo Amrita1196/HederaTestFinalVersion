@@ -10,7 +10,7 @@ const {
 } = require("@hashgraph/sdk");
 
 //Loading values from environment file
-require('dotenv').config();
+require('dotenv').config({path:'../.env'});
 
 // Configure Account1 as treasury account 
 const treasuryId = process.env.ACCOUNT_ID1;

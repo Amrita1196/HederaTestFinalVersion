@@ -12,7 +12,7 @@ const {
     = require("@hashgraph/sdk");
 
 //Loading values from environment file
-require('dotenv').config();
+require('dotenv').config({path:'../.env'});
 
 // Account1 ID and PrivateKey ,Here Account1 will work like treasury Account
 const treasuryAccount = process.env.ACCOUNT_ID1;

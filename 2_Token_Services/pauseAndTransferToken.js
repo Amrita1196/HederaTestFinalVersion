@@ -10,7 +10,7 @@ const {
     PrivateKey
 } = require("@hashgraph/sdk");
 //Loading values from environment file
-    require('dotenv').config();
+ require('dotenv').config({path:'../.env'});
 
 //fetching Account1ID and private key from .env file
 const myAccountId = process.env.ACCOUNT_ID1;

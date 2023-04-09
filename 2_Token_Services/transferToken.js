@@ -8,7 +8,7 @@ const {
     Wallet,
     PrivateKey
 } = require("@hashgraph/sdk");
-    require('dotenv').config();
+    require('dotenv').config({path:'../.env'});
 
  // fetching Account1 ID and PrivateKey from .env file
 const myAccountId = process.env.ACCOUNT_ID1;

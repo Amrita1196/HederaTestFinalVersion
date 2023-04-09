@@ -11,7 +11,7 @@ const {
   } = require("@hashgraph/sdk");
   
   //Loading values from environment file
-  require('dotenv').config();
+  require('dotenv').config({path:'../.env'});
   
   async function main() {
   

@@ -3,8 +3,9 @@ const {
     FileCreateTransaction,
     ContractCreateTransaction,
     PrivateKey, Hbar,ContractExecuteTransaction,
-    ContractFunctionParameters, ContractCallQuery } = require("@hashgraph/sdk");
-require('dotenv').config();
+    ContractFunctionParameters, ContractCallQuery }
+     = require("@hashgraph/sdk");
+       require('dotenv').config({path:'../.env'});
 const Web3=require("web3");
 const web3=new Web3;
 // Fetch Account1_id and Account1 private key from .env file
